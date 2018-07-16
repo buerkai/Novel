@@ -27,4 +27,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
     api 'com.android.support:multidex:1.0.3'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.parkingwang:okhttp3-loginterceptor:latest.integration'
 }
