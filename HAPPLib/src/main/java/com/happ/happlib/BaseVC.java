@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.happ.happlib.mvp.IView;
 
-public  class BaseVC extends AppCompatActivity implements IView, HHandler.HandlerListener {
+public  class BaseVC extends AppCompatActivity implements  HHandler.HandlerListener {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,10 +53,7 @@ public  class BaseVC extends AppCompatActivity implements IView, HHandler.Handle
 
     }
 
-    @Override
-    public Context getContent() {
-        return this;
-    }
+
 
     @Override
     public void handleMessage(boolean mainThread, Message msg) {
